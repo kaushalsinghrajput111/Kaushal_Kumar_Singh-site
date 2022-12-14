@@ -36,12 +36,12 @@ h3,h2{
   color: var(--primary-color);
   background-color: var(--primary-background-color);
   border-radius: 0.5rem;
-  width:50%;
+  width:10rem;
   margin:20px auto;
   display: block;
 }
 .secondary_link {
-  width:50%;
+  width:10rem;
   margin:20px auto;
   display: block;
   border-radius: 0.5rem;
@@ -88,20 +88,22 @@ h3,h2{
 }
 .hero .hero-img {
   width: 260px;
-  max-width: 350px;
   display: block;
   margin: 2rem auto;
 }
 /* section */
+.project-section{
+  display: flex;
+  flex-direction: column-reverse;
+}
 .section{
   text-align:center;
     padding: 2rem;
-    margin: 20px 0px;
+    margin: 20px auto;
     border-radius: 10px;
 }
 .section h1{
 
-  margin-bottom: 20px;
 
 }
 .section p{
@@ -126,5 +128,15 @@ background-color: var(--primary-color);
     font-size: large;
 }
 .small_text{
+  display: block;
+  margin: 5px 0px 20px 0px;
   text-align: center;
+}
+@media screen and (min-width:425px){
+  .hero .hero-img{
+    width: 350px;
+  }
+  .section{
+    width: 60%;
+  }
 }
